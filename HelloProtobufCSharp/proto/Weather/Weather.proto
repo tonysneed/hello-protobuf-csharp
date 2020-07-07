@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "HelloProtobufCSharp.v1.Models";
+
+import "google/protobuf/timestamp.proto";
+
+package weather;
+
+message WeatherData {
+    string summary = 1;
+    int32 temperatureF = 2;
+    google.protobuf.Timestamp dateTimeStamp = 3;
+}
